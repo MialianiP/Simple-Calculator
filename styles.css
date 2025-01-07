@@ -1,0 +1,33 @@
+h1 {
+    color: blue;
+    text-align: center;
+    background-color: yellow;
+    border: 5px solid black;
+}
+
+p {
+    color: blue;
+    text-align: center;
+}
+
+
+/* .class selector slects elements with a specific class attribute */
+
+
+/* .calculator points to <table class="calculator"> */
+
+.calculator {
+    margin: auto;
+    background-color: white;
+    height: 200px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.button {
+    color: black;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+}

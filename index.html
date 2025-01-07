@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1>Calculator</h1>
+    <!-- links to styles.css file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <p>A simple calculator</p>
+    <!-- defines a table -->
+    <!-- class atribute points to class name in style sheet -->
+    <table class="calculator">
+        <!-- <tr> defines a row in table -->
+        <tr>
+            <!-- cell displays user's input and output -->
+            <!-- <th colspan="x"> defines length of cell in table -->
+            <th colspan="4"><input type="text" id="output" /></th>
+        </tr>
+        <tr>
+            <!-- <td> defines a cell in table -->
+            <td>
+                <!-- input type="Different types of HTML <input> elements"-->
+                <!-- onClick="Perform action"-->
+                <input type="button" value="C" class="button" onclick="clearExpression()" />
+            </td>
+            <td>
+                <input type="button" value="/" class="button" onclick="display('/')" />
+            </td>
+            <td>
+                <input type="button" value="*" class="button" onclick="display('*')" />
+            </td>
+            <td>
+                <input type="button" value="-" class="button" onclick="display('-')" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="7" class="button" onclick="display('7')" />
+            </td>
+            <td>
+                <input type="button" value="8" class="button" onclick="display('8')" />
+            </td>
+            <td>
+                <input type="button" value="9" class="button" onclick="display('9')" />
+            </td>
+            <!-- <th rowspan="x"> defines height of cell in table -->
+            <th rowspan="2">
+                <input type="button" value="+" class="button" onclick="display('+')" />
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="4" class="button" onclick="display('4')" />
+            </td>
+            <td>
+                <input type="button" value="5" class="button" onclick="display('5')" />
+            </td>
+            <td>
+                <input type="button" value="6" class="button" onclick="display('6')" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="1" class="button" onclick="display('1')" />
+            </td>
+            <td>
+                <input type="button" value="2" class="button" onclick="display('2')" />
+            </td>
+            <td>
+                <input type="button" value="3" class="button" onclick="display('3')" />
+            </td>
+            <th rowspan="2">
+                <input type="button" value="=" class="button" onclick="calculate()" />
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <input type="button" value="0" class="button" onclick="display('0')" />
+            </th>
+            <td>
+                <input type="button" value="." class="button" onclick="display('.')" />
+            </td>
+        </tr>
+    </table>
+    <!-- links to scripts.js file -->
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+
+</html>
